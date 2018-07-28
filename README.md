@@ -156,18 +156,27 @@ CK will attempt to build a TVM/VTA version with a simulator target, and will per
 ## Related Publications
 
 ```
-@article{DBLP:journals/corr/ChenLLLWWXXZZ15,
-  author    = {Tianqi Chen and Mu Li and Yutian Li and Min Lin and Naiyan Wang and Minjie Wang and Tianjun Xiao and Bing Xu and Chiyuan Zhang and Zheng Zhang},
-  title     = {MXNet: {A} Flexible and Efficient Machine Learning Library for Heterogeneous Distributed Systems},
+@article{DBLP:journals/corr/abs-1802-04799,
+  author    = {Tianqi Chen and
+               Thierry Moreau and
+               Ziheng Jiang and
+               Haichen Shen and
+               Eddie Q. Yan and
+               Leyuan Wang and
+               Yuwei Hu and
+               Luis Ceze and
+               Carlos Guestrin and
+               Arvind Krishnamurthy},
+  title     = {{TVM:} End-to-End Optimization Stack for Deep Learning},
   journal   = {CoRR},
-  volume    = {abs/1512.01274},
-  year      = {2015},
-  url       = {http://arxiv.org/abs/1512.01274},
+  volume    = {abs/1802.04799},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1802.04799},
   archivePrefix = {arXiv},
-  eprint    = {1512.01274},
-  timestamp = {Wed, 07 Jun 2017 14:40:48 +0200},
-  biburl    = {http://dblp.org/rec/bib/journals/corr/ChenLLLWWXXZZ15},
-  bibsource = {dblp computer science bibliography, http://dblp.org}
+  eprint    = {1802.04799},
+  timestamp = {Thu, 01 Mar 2018 15:00:45 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1802-04799},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @inproceedings{ck-date16,
@@ -179,6 +188,23 @@ CK will attempt to build a TVM/VTA version with a simulator target, and will per
     url = {https://www.researchgate.net/publication/304010295_Collective_Knowledge_Towards_RD_Sustainability}
 }
 
+@article{DBLP:journals/corr/abs-1801-08024,
+  author    = {Grigori Fursin and
+               Anton Lokhmotov and
+               Dmitry Savenko and
+               Eben Upton},
+  title     = {A Collective Knowledge workflow for collaborative research into multi-objective
+               autotuning and machine learning techniques},
+  journal   = {CoRR},
+  volume    = {abs/1801.08024},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1801.08024},
+  archivePrefix = {arXiv},
+  eprint    = {1801.08024},
+  timestamp = {Fri, 02 Feb 2018 14:20:25 +0100},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/abs-1801-08024},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 ```
 
 ## Feedback
