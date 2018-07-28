@@ -5,6 +5,17 @@
   "data_name": "ck-tvm",
   "dict": {
     "shared": "git",
-    "url": "https://github.com/ctuning/ck-tvm"
+    "url": "https://github.com/ctuning/ck-tvm",
+    "repo_deps": [
+      {
+        "repo_uoa": "ck-autotuning"
+      },
+      {
+        "repo_uoa": "ck-math"
+      },
+      {
+        "repo_uoa": "ctuning-datasets-min"
+      }
+    ]
   }
 }
