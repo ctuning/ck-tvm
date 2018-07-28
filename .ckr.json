@@ -1,0 +1,10 @@
+{
+  "data_uoa": "ck-tvm",
+  "data_uid": "0442e96ea67b7957",
+  "data_alias": "ck-tvm",
+  "data_name": "ck-tvm",
+  "dict": {
+    "shared": "git",
+    "url": "https://github.com/ctuning/ck-tvm"
+  }
+}
