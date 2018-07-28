@@ -179,15 +179,6 @@ CK will attempt to build a TVM/VTA version with a simulator target, and will per
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{ck-date16,
-    title = {{Collective Knowledge}: towards {R\&D} sustainability},
-    author = {Fursin, Grigori and Lokhmotov, Anton and Plowman, Ed},
-    booktitle = {Proceedings of the Conference on Design, Automation and Test in Europe (DATE'16)},
-    year = {2016},
-    month = {March},
-    url = {https://www.researchgate.net/publication/304010295_Collective_Knowledge_Towards_RD_Sustainability}
-}
-
 @article{DBLP:journals/corr/abs-1801-08024,
   author    = {Grigori Fursin and
                Anton Lokhmotov and
