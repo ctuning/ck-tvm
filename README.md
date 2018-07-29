@@ -15,6 +15,8 @@ during open [ACM ReQuEST competitions](http://cKnowledge.org/request)
 as described in the [ACM ReQuEST report](https://portalparts.acm.org/3230000/3229762/fm/frontmatter.pdf).
 All benchmarking and optimization results are available 
 in the [public CK repository](http://cKnowledge.org/repo).
+See [CK getting started guide](https://github.com/ctuning/ck/wiki/First-Steps)
+for more details about CK.
 
 ## Coordination of development
 
@@ -152,6 +154,21 @@ $ ck run program:image-classification-vta-sim
 ```
 
 CK will attempt to build a TVM/VTA version with a simulator target, and will perform image classification using this simulator.
+
+## CK virtual environment for TVM/VTA
+
+CK support lightweight virtual environment for all packages 
+(automatically setting all necessary environment variables for 
+different versions of different tools natively installed on a user machine).
+
+You can start a virtual environment for a given TVM package as follows:
+```
+$ ck virtual env --tags=lib,tvm
+> export | grep "CK_"
+```
+
+See [this blog post](https://dividiti.blogspot.com/2018/07/enabling-virtual-environment-for.html)
+about CK virtual environment.
 
 ## Related Publications
 
