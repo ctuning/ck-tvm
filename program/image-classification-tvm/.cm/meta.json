@@ -80,7 +80,7 @@
       }, 
       "run_time": {
         "fine_grain_timer_file": "tmp-ck-timer.json", 
-        "run_cmd_main": "$<<CK_ENV_COMPILER_PYTHON_FILE>>$ ../classify.py --image=$#dataset_path#$$#dataset_filename#$", 
+        "run_cmd_main": "$<<CK_ENV_COMPILER_PYTHON_FILE>>$ ../classify.py --image=$#dataset_path#$$#dataset_filename#$ --target=cuda", 
         "run_output_files": [
           "tmp-ck-timer.json"
         ]

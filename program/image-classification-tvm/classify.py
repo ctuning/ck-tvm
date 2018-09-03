@@ -32,7 +32,7 @@ def get_top5(all_probs):
   sorted_probs = sorted(probs_with_classes, key = lambda pair: pair[0], reverse=True)
   return sorted_probs[0:5]
 
-def run_case(dtype, image):
+def run_case(dtype, image, target):
     # Check image
     import os
     import json
@@ -115,10 +115,15 @@ def run_case(dtype, image):
        params = {k: tvm.nd.array(v.asnumpy().astype(dtype)) for k, v in params.items()}
 
     # compile
+    if target==None or target=='cpu':
+       xtarget='llvm'
+    elif target=='cuda':
+       xtarget='cuda'
+
     opt_level = 2 if dtype == 'float32' else 1
     with nnvm.compiler.build_config(opt_level=opt_level):
         graph, lib, params = nnvm.compiler.build(
-            net, target="llvm", shape={"data": data_shape}, params=params,
+            net, target=xtarget, shape={"data": data_shape}, params=params,
             dtype=dtype, target_host=None)
 
     # upload model to remote device
@@ -126,7 +131,10 @@ def run_case(dtype, image):
     lib_fname = tmp.relpath('net.tar')
     lib.export_library(lib_fname)
 
-    ctx = tvm.cpu(0)
+    if target==None or target=='cpu':
+       ctx = tvm.cpu(0)
+    elif target=='cuda':
+       ctx = tvm.gpu(0)
     rlib = lib
     rparams = params
 
@@ -265,6 +273,7 @@ def run_case(dtype, image):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--image', type=str, help="Path to JPEG image.", default=None)
+    parser.add_argument('--target', type=str, help="Target", default=None)
     args = parser.parse_args()
 
     # set parameter
@@ -280,4 +289,4 @@ if __name__ == '__main__':
     if os.environ.get('CK_TVM_DTYPE','')!='':
        dtype=os.environ['CK_TVM_DTYPE']
 
-    run_case(dtype, args.image)
+    run_case(dtype, args.image, args.target)
