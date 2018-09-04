@@ -45,7 +45,7 @@ $ export PATH=$PWD/ck/bin:$PATH
 $ export PYTHONPATH=$PWD/ck:$PYTHONPATH
 ```
 
-See CK installation procedures for other operating systems [here](https://github.com/ctuning/ck#minimal-installation)
+See CK installation procedures for other operating systems [here](https://github.com/ctuning/ck#minimal-installation).
 
 ## CK workflow installation for TVM 
 
