@@ -53,14 +53,14 @@ See CK installation procedures for other operating systems [here](https://github
 
 ```
 $ ck pull repo:ck-tvm
-$ ck install package --tags=lib,tvm,vcpu
+$ ck install package --tags=lib,tvm,vcpu,vllvm
 ```
 
 ### Installing GPU (CUDA) version
 
 ```
 $ ck pull repo:ck-tvm
-$ ck install package --tags=lib,tvm,vcuda
+$ ck install package --tags=lib,tvm,vcuda,vllvm
 ```
 
 ## Image classification via TVM
