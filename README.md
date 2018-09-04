@@ -70,19 +70,32 @@ or
 
 ## CK workflow installation for TVM 
 
-### CPU
+### Installing CPU version
 
 ```
 $ ck pull repo:ck-tvm
 $ ck install package --tags=lib,tvm,vcpu
 ```
 
-### GPU
+### Installing GPU (CUDA) version
 
 ```
 $ ck pull repo:ck-tvm
 $ ck install package --tags=lib,tvm,vcuda
 ```
+
+## Image classification via TVM
+
+We provided a simple example to classify images using MXNet model and TVM. You can test it as follows:
+
+```
+$ ck pull repo:ck-mxnet
+$ ck install package:mxnetmodel-mobilenet-1.0
+
+$ ck run program:image-classification-tvm --cmd_key=classify_cpu
+$ ck run program:image-classification-tvm --cmd_key=classify_gpu
+```
+
 
 ## CK workflow for VTA (deep learning accelerator stack)
 
