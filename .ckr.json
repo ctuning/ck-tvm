@@ -1,11 +1,10 @@
 {
-  "data_uoa": "ck-tvm",
-  "data_uid": "0442e96ea67b7957",
   "data_alias": "ck-tvm",
   "data_name": "ck-tvm",
+  "data_uid": "0442e96ea67b7957",
+  "data_uoa": "ck-tvm",
   "dict": {
-    "shared": "git",
-    "url": "https://github.com/ctuning/ck-tvm",
+    "desc": "Portable/customizable installation and unified access to TVM/VTA AI frameworks with different workflows and data sets.",
     "repo_deps": [
       {
         "repo_uoa": "ck-autotuning"
@@ -16,6 +15,8 @@
       {
         "repo_uoa": "ctuning-datasets-min"
       }
-    ]
+    ],
+    "shared": "git",
+    "url": "https://github.com/ctuning/ck-tvm"
   }
 }
